@@ -1,3 +1,6 @@
 
-def main():
-    print("TESTING123")
+import click
+
+@click.group()
+def cli():
+    pass
