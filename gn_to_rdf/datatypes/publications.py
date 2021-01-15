@@ -2,7 +2,7 @@ from rdflib import Graph, Namespace, BNode, Literal
 
 from rdflib.namespace import DC
 
-from sqlalchemy import Table, MetaData, select
+from sqlalchemy import MetaData
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.automap import automap_base
 
