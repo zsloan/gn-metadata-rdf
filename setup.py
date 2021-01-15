@@ -20,6 +20,6 @@ setuptools.setup(
     ],
     python_requires='>=3.8.2',
     entry_points = {
-        'console_scripts': ['gn-metadata-to-rdf=gn_metadata_to_rdf.main:cli']
+        'console_scripts': ['gn-metadata-to-rdf=gn_to_rdf.main:cli']
     },
 )
