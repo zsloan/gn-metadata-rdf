@@ -45,6 +45,16 @@ def build_nodes(pub_graph, this_pub):
     pub_graph.add((gn_id, gn.pmid, Literal(this_pub['PubMed_ID'])))
     pub_graph.add((gn_id, DC.title, Literal(this_pub['Title'])))
     pub_graph.add((gn_id, schema.abstract, Literal(this_pub['Abstract'])))
+
+    if this_pub['Pages']:
+        pages = this_pub['Pages'].split("-")
+        if len(pages) > 1:
+            pub_graph.add((gn_id, schema.pageStart, Literal(pages[0])))
+            pub_graph.add((gn_id, schema.pageEnd, Literal(pages[1])))
+        else: #ZS: If an article is just one page I guess? Seems like this should be possible but not sure about an easy way to check
+            pub_graph.add((gn_id, schema.pageStart, Literal(pages[0])))
+            pub_graph.add((gn_id, schema.pageEnd, Literal(pages[0])))
+
     issue_node = BNode()
     volume_num, issue_num = get_issue_vol(this_pub['Volume'])
 
