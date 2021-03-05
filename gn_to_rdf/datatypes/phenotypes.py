@@ -7,16 +7,12 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.automap import automap_base
 
 #ZS: Define Namespaces
-pubmed_prefix = "https://pubmed.ncbi.nlm.nih.gov/"
 gn_prefix = "https://genenetwork.org/"
 gn = Namespace("https://genenetwork.org/")
-schema = Namespace("https://schema.org/")
 
 def convert(db_engine, out_file):
     pheno_graph = Graph()
     pheno_graph.bind("gn", gn)
-    pheno_graph.bind("dc", DC)
-    pheno_graph.bind("schema", schema)
 
     db_session = sessionmaker(bind=db_engine)()
 
