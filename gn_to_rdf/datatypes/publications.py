@@ -32,10 +32,7 @@ def convert(db_engine):
 
         build_nodes(pub_graph, this_pub)
 
-        if i > 3:
-            break
-
-    print(pub_graph.serialize(format="turtle").decode("utf-8"))
+    pub_graph.serialize(destination=out_file + "phenotypes.ttl", format="turtle")
 
 def build_nodes(pub_graph, this_pub):
     gn_id = URIRef(gn_prefix + 'publication/' + str(this_pub['Id']))
