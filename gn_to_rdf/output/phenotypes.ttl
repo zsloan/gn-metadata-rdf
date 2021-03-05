@@ -1,0 +1,82 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix gn: <https://genenetwork.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://genenetwork.org/phenotype/AXB_10001> gn:additive -2.328875e+01 ;
+    gn:group_id <https://genenetwork.org/group/4> ;
+    gn:locus "CEL-6_57082524" ;
+    gn:lrs 1.171195e+01 ;
+    gn:mean 7.213684e+01 ;
+    gn:original_description "Original post publication description: Interleukin 1 activity by peritoneal macrophages stimulated with 10 ug/ml lipopolysaccharide  [units/100 ug protein]" ;
+    gn:post_publication_abbreviation "IL1Activity" ;
+    gn:post_publication_description "Interleukin 1 activity by peritoneal macrophages stimulated with 10 ug/ml lipopolysaccharide  [units/100 ug protein]" ;
+    gn:publication <https://genenetwork.org/publication/81> ;
+    gn:units "units/100 ug protein" .
+
+<https://genenetwork.org/phenotype/BXD_10001> gn:additive 2.394444e+00 ;
+    gn:group_id <https://genenetwork.org/group/1> ;
+    gn:locus "rs48756159" ;
+    gn:lrs 1.349749e+01 ;
+    gn:mean 5.213529e+01 ;
+    gn:original_description "Original post publication description: Cerebellum weight [mg]" ;
+    gn:post_publication_abbreviation "CBLWT2" ;
+    gn:post_publication_description "Central nervous system, morphology: Cerebellum weight, whole, bilateral in adults of both sexes [mg]" ;
+    gn:publication <https://genenetwork.org/publication/116> ;
+    gn:units "mg" .
+
+<https://genenetwork.org/phenotype/BXH_10001> gn:additive -2.868749e+00 ;
+    gn:group_id <https://genenetwork.org/group/7> ;
+    gn:locus "D7Mit25UT" ;
+    gn:lrs 9.855339e+00 ;
+    gn:mean 5.79e+01 ;
+    gn:original_description "Original post publication description: Cerebellum weight" ;
+    gn:post_publication_abbreviation "CBLWT" ;
+    gn:post_publication_description "Cerebellum weight" ;
+    gn:publication <https://genenetwork.org/publication/53> ;
+    gn:units "mg" .
+
+<https://genenetwork.org/phenotype/BXH_10002> gn:group_id <https://genenetwork.org/group/7> ;
+    gn:mean 8e-01 ;
+    gn:original_description "Original post publication description: Number of murine leukemia virus (MuLV) sequences in spleen of normal mice [no. of virus-specific sequences]" ;
+    gn:post_publication_abbreviation "MuLVSpleenBas" ;
+    gn:post_publication_description "Number of murine leukemia virus (MuLV) sequences in spleen of normal mice [no. of virus-specific sequences]" ;
+    gn:publication <https://genenetwork.org/publication/54> ;
+    gn:units "number of virus-specific sequences" .
+
+<https://genenetwork.org/phenotype/CXB_10001> gn:additive -1.20875e+00 ;
+    gn:group_id <https://genenetwork.org/group/8> ;
+    gn:locus "D2Mit5" ;
+    gn:lrs 1.018352e+01 ;
+    gn:mean 2.760769e+01 ;
+    gn:original_description "Original post publication description: Hippocampus weight" ;
+    gn:post_publication_abbreviation "HPCWT" ;
+    gn:post_publication_description "Hippocampus weight" ;
+    gn:publication <https://genenetwork.org/publication/1> ;
+    gn:units "Unknown" .
+
+<https://genenetwork.org/phenotype/CXB_10002> gn:additive -1.097619e+00 ;
+    gn:group_id <https://genenetwork.org/group/8> ;
+    gn:locus "D17Mit243" ;
+    gn:lrs 1.133581e+01 ;
+    gn:mean 2.131538e+01 ;
+    gn:original_description "Original post publication description: Olfactory bulb weight" ;
+    gn:post_publication_abbreviation "OlfBulbWT" ;
+    gn:post_publication_description "Olfactory bulb weight" ;
+    gn:publication <https://genenetwork.org/publication/1> ;
+    gn:units "Unknown" .
+
+<https://genenetwork.org/phenotype/LXS_10001> gn:additive 1.272727e+00 ;
+    gn:group_id <https://genenetwork.org/group/9> ;
+    gn:locus "rs6180537" ;
+    gn:lrs 1.193032e+02 ;
+    gn:mean 1.734177e+00 ;
+    gn:original_description "Original post publication description: Coat color (1=white, 5=black)" ;
+    gn:post_publication_abbreviation "CoatColor2" ;
+    gn:post_publication_description "Coat color (1=white, 2, 3, and 4=lighter browns, 5=dark brown)" ;
+    gn:publication <https://genenetwork.org/publication/245> ;
+    gn:units "Unknown" .
+
