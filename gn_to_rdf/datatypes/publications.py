@@ -12,7 +12,7 @@ gn_prefix = "https://genenetwork.org/"
 gn = Namespace("https://genenetwork.org/")
 schema = Namespace("https://schema.org/")
 
-def convert(db_engine):
+def convert(db_engine, out_file):
     pub_graph = Graph()
     pub_graph.bind("gn", gn)
     pub_graph.bind("dc", DC)
@@ -29,10 +29,9 @@ def convert(db_engine):
 
     for i, row in enumerate(rows):
         this_pub = row.__dict__
-
         build_nodes(pub_graph, this_pub)
 
-    pub_graph.serialize(destination=out_file + "phenotypes.ttl", format="turtle")
+    pub_graph.serialize(destination=out_file + "publications.ttl", format="turtle")
 
 def build_nodes(pub_graph, this_pub):
     gn_id = URIRef(gn_prefix + 'publication/' + str(this_pub['Id']))
