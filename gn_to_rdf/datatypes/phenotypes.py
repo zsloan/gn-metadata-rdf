@@ -1,10 +1,6 @@
-from rdflib import Graph, Namespace, URIRef, BNode, Literal
+from rdflib import Graph, Namespace, URIRef, Literal
 
-from rdflib.namespace import DC
-
-from sqlalchemy import MetaData
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy.ext.automap import automap_base
 
 #ZS: Define Namespaces
 gn_prefix = "https://genenetwork.org/"
